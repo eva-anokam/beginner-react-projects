@@ -59,13 +59,13 @@ h2{
   font-size: 1.75rem;
 }
 section{
-  padding-top: 7rem;
+  padding-top: 5rem;
   text-align: center;
   --flow-spacer: 1rem;
 }
 @media(min-width: 768px) {
   section{
-     padding-top: 14rem;
+    padding-top: 7rem;
      --flow-spacer: 2rem;
   }
   h1{
@@ -95,16 +95,12 @@ Utility classes
     max-width: 500px;
     margin-inline: auto;
 }
-.btn{
-    text-decoration: none;
-    color: var(--clr-light);
-    padding: 1rem 2rem;
-}
 .btn {
   display: block;
   text-decoration: none;
   color: var(--clr-light);
   padding: 1rem 2rem;
+  text-align: center;
   margin-inline: auto;
   --flow-spacer: 3rem;
   transition: all .5s;

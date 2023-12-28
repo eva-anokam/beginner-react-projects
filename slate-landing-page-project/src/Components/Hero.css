@@ -11,10 +11,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     width: min(50%, 30rem);
     margin-top: 2rem;
     margin-inline: auto;
+}
+.btn-group a{
+    width: 182px;
 }
 .img-group{
      background: linear-gradient(
