@@ -1,0 +1,136 @@
+:root {
+  --clr-dark-bg: #181818;
+  --clr-light: #fff;
+  --clr-primary: #4452fe;
+  --clr-secondary: #02e4c0;
+
+  --ff: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  --fw: 400;
+  --fs-500: 5rem;
+  --fs-400: 3.25rem;
+  --fs-300: 3rem;
+  --fs-200: 1.5rem;
+  --fs-100: 1.25rem;
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+/* 
+-------------
+Resets
+--------------
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: var(--ff);
+  margin: 0;
+  background-color: var(--clr-dark-bg);
+  color: var(--clr-light);
+}
+li {
+  list-style-type: none;
+}
+h2{
+  font-size: 1.75rem;
+}
+section{
+  padding-top: 4rem;
+  text-align: center;
+  --flow-spacer: 1rem;
+}
+@media(min-width: 768px) {
+  section{
+     padding-top: 4rem;
+     --flow-spacer: 2rem;
+  }
+  h1{
+    font-size: var(--fs-400);
+  }
+  h2{
+    font-size: var(--fs-300);
+  }
+  p{
+    font-size: 1rem;
+  }
+}
+/* 
+-------------
+Utility classes
+--------------
+*/
+.container {
+  width: min(90%, 70rem);
+  margin: 0 auto;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 2rem);
+}
+.subtitle{
+    max-width: 500px;
+    margin-inline: auto;
+}
+.btn{
+    text-decoration: none;
+    color: var(--clr-light);
+    padding: 1rem 2rem;
+}
+.btn {
+  display: block;
+  text-decoration: none;
+  color: var(--clr-light);
+  padding: 1rem 2rem;
+  margin-inline: auto;
+  --flow-spacer: 3rem;
+}
+.btn-primary{
+    background-color: var(--clr-primary);
+}
+.btn-secondary{
+    border: 1px solid var(--clr-light);
+}
+.btn-small{
+  width: 60%;
+  max-width: 10rem;
+}
+
+.btn:hover, .btn:focus{
+  background-color:  var(--clr-secondary);
+}
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

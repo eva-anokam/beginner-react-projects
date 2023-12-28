@@ -1,0 +1,32 @@
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card{
+    background-color: var(--clr-light);
+    color: var(--clr-dark-bg);
+    padding: 2rem;
+    font-size: .75rem;
+    border-radius: 10px;
+    max-width: 400px;
+}
+.card h3{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card img{
+    aspect-ratio: 1/1;
+}
+@media(min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        margin-inline: auto;
+        justify-content: center;
+    }
+    
+}

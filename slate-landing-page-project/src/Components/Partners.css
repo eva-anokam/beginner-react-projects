@@ -1,0 +1,14 @@
+.logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    --flow-spacer: 3rem;
+}
+.logo-container img{
+    width: min(50%, 3.5rem);
+}
+.partners a{
+    --flow-spacer: 4rem;
+}

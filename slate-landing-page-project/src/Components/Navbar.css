@@ -1,0 +1,129 @@
+/* 
+-------------
+Navbar
+--------------
+*/
+header{
+  padding-block: 1rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu-bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: .375rem;
+    flex: 2;
+    height: 58px;
+}
+.menu-bars div{
+    height: 5px;
+    width: 45px;
+    background-color: var(--clr-light);
+    transition: all .2s ease;
+}
+.menu-bars div:nth-child(2) {
+    width: 35px;
+    align-self: flex-end;
+}
+.menu-bars div:nth-child(3) {
+    width: 25px;
+    align-self: flex-end;
+}
+#menu-bars-control{
+    display: none;
+}
+#menu-bars-control:checked ~ .menu{
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: calc(100% - 90px);
+    background-color: var(--clr-dark-bg);
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: var(--fs-100);
+    text-align: center;
+}
+#menu-bars-control:checked ~ label .menu-bars  {
+   padding-top: 1rem;   
+}
+
+#menu-bars-control:checked ~ label .menu-bars div {
+    width: 45px;
+    
+}
+#menu-bars-control:checked ~ label .menu-bars div:nth-child(1){
+    transform: rotate(-40deg) translateY(5px);
+}
+#menu-bars-control:checked ~ label .menu-bars div:nth-child(2){
+    display: none;
+}
+#menu-bars-control:checked ~ label .menu-bars div:nth-child(3){
+    transform: rotate(40deg) translateY(-8px) translateX(0px);
+    
+}
+.menu ul > * + *{
+    margin-top: 1rem;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--clr-light);
+    padding-block: .5rem;
+}  
+.menu a:hover, .menu a:focus{
+    color: var(--clr-secondary);
+}
+.menu div:last-child a{
+    display: block;
+    margin-top: 2rem;
+    border: 1px solid var(--clr-light);
+    text-align: center;
+}
+@media (min-width: 768px) {
+    label{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        flex: 2;
+        margin-top: 1rem;
+    }
+    .menu ul{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-block: .5rem;
+    }
+    .menu ul a{
+        padding: .5rem 1rem;
+    }
+    .menu ul > * + * {
+        margin: 0;
+    }
+    .menu div:last-child a{
+        padding: .25rem 2.5rem;
+        margin-top: 0;
+    }
+}
