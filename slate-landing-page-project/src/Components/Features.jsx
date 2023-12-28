@@ -1,8 +1,9 @@
+import React from "react";
 import featuresImg from "../assets/features.svg";
-import featureIcon1 from "../assets/feature-icon1.svg"
+import featureIcon1 from "../assets/feature-icon1.svg";
 import featureIcon2 from "../assets/feature-icon2.svg";
 import featureIcon3 from "../assets/feature-icon3.svg";
-import "./Features.css"
+import "./Features.css";
 export default function Features() {
   return (
     <section className="features">

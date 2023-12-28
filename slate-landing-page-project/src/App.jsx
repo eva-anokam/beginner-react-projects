@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 // import reactLogo from './assets/react.svg'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'

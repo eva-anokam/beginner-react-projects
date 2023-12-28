@@ -1,5 +1,6 @@
+import React from "react";
 import heroImg from "../assets/hero.svg";
-import "./Hero.css"
+import "./Hero.css";
 export default function Hero() {
   return (
     <section className="hero">
@@ -10,8 +11,12 @@ export default function Hero() {
           freelancers who want a simple way to plan their schedule.
         </p>
         <div className="btn-group">
-          <a href="#" className=" btn btn-primary">Try it out</a>
-          <a href="#" className="btn btn-secondary">Learn More</a>
+          <a href="#" className=" btn btn-primary">
+            Try it out
+          </a>
+          <a href="#" className="btn btn-secondary">
+            Learn More
+          </a>
         </div>
       </div>
       <div className="img-group">
