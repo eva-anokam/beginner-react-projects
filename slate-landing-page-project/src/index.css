@@ -59,13 +59,13 @@ h2{
   font-size: 1.75rem;
 }
 section{
-  padding-top: 4rem;
+  padding-top: 7rem;
   text-align: center;
   --flow-spacer: 1rem;
 }
 @media(min-width: 768px) {
   section{
-     padding-top: 4rem;
+     padding-top: 14rem;
      --flow-spacer: 2rem;
   }
   h1{
@@ -107,6 +107,7 @@ Utility classes
   padding: 1rem 2rem;
   margin-inline: auto;
   --flow-spacer: 3rem;
+  transition: all .5s;
 }
 .btn-primary{
     background-color: var(--clr-primary);
@@ -121,6 +122,7 @@ Utility classes
 
 .btn:hover, .btn:focus{
   background-color:  var(--clr-secondary);
+  border: none;
 }
 /* @media (prefers-color-scheme: light) {
   :root {

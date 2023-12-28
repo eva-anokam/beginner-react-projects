@@ -90,8 +90,10 @@ nav{
 .menu div:last-child a{
     display: block;
     margin-top: 2rem;
-    border: 1px solid var(--clr-light);
     text-align: center;
+}
+.menu div:last-child a:hover, .menu div:last-child a:focus{
+    color: var(--clr-light)
 }
 @media (min-width: 768px) {
     label{

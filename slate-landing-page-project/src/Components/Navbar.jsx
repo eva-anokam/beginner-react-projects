@@ -31,7 +31,7 @@ export default function Navbar() {
             </li>
           </ul>
           <div>
-            <a href="#">Login</a>
+            <a href="#" className="btn btn-secondary btn-small">Login</a>
           </div>
         </div>
       </nav>
