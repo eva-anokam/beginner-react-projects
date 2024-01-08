@@ -1,0 +1,26 @@
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 5px;
+  
+}
+
+.status{
+    display: flex;
+    gap: .75rem;
+    flex-wrap: wrap;
+    font-size: .75rem;
+    justify-content: center;
+    border-radius: 5px;
+}
+.status p{
+    cursor: pointer;
+}
+.stats p{
+    cursor: pointer;
+}

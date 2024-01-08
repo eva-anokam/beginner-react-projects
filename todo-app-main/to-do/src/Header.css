@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+header h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    flex: 2;
+}
+header div{
+    width: 7%;
+   max-width: 1rem;
+}
+

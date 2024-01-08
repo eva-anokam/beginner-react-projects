@@ -1,0 +1,103 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --clr-blue: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --clr-gray-100:  #fafafa;
+  --clr-gray-200:  hsl(236, 33%, 92%);
+  --clr-gray-300: hsl(233, 11%, 84%);
+  --clr-gray-400: hsl(236, 9%, 61%);
+  --clr-gray-500:  hsl(235, 19%, 35%);
+
+  --clr-blue-600:hsl(235, 24%, 19%);
+  --clr-blue-700: #161722;
+  --clr-blue-500: hsl(234, 39%, 85%);
+  --clr-blue-hover: hsl(236, 33%, 92%);
+  --clr-blue-400: hsl(234, 11%, 52%);
+  --clr-blue-300:  hsl(233, 14%, 35%);
+  --clr-blue-200: hsl(237, 14%, 26%); 
+
+  --spacer: 1rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  font-size: .75rem;
+}
+
+/* 
+----------
+Utility
+---------
+*/
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.flow-content--lg {
+  --flow-space: 3rem;
+}
+.container {
+  width: min(90%, 20rem);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.dark-mode{
+  color: var(--clr-gray-100);
+  background-color: var(--clr-blue-700);
+   min-height: 100vh;
+}
+.light-mode{
+  background-color: var(--clr-gray-100);
+  color: var(--clr-gray-500);
+   min-height: 100vh;
+}
+
+.bg-gray{
+   background-color: var(--clr-blue-600);
+    color: var(--clr-gray-200);
+    padding: .5rem;
+}
+.bg-light{
+  background-color: #fff;
+  color: var(--clr-gray-500);
+  padding: .5rem;
+}
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.text-gray{
+  color: var(--clr-gray-400);
+}
+
+.text-blue{
+  color: var(--clr-blue);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media(min-width: 760px) {
+  body{
+    font-size: 1rem;
+  }
+}

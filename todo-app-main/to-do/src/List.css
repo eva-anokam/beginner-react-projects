@@ -1,0 +1,68 @@
+ul{
+    padding: 0;
+}
+.empty-state{
+    width: 100%;
+    margin-inline: auto;
+    max-width: 10rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-bottom: 3rem;
+}
+.empty-state img{
+    width: 100%;   
+}
+input{
+    margin-bottom: 1rem;
+    border: none;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: var(--clr-gray-300);
+}
+input:focus, input:active{
+    outline: 1px solid var(--clr-blue);
+}
+.todo-list{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--clr-gray-500);
+}
+.todo-item__text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle{
+    border: 1px solid var(--clr-gray-200);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.todo-item > .done{
+    text-decoration: line-through;
+    color: var(--clr-gray-400);
+}
+.done > .circle{
+    background-color
+    : var(--clr-blue);
+    background-image: url("../images/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+.delete-icon{
+    cursor: pointer;
+}
