@@ -1,0 +1,154 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* 
+---------------------
+Utility classes
+----------------------
+*/
+
+.flow-content > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flow-content--lg {
+  --flow-space: 3rem;
+}
+.container {
+  margin-inline: auto;
+  --flow-space: 2rem;
+  padding-block: 2rem;
+  width: min(90%, 40rem);
+}
+.title{
+  background-color: purple;
+  color: white;
+  padding: .25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  max-width: 11ch;
+  margin: 1rem 0;
+}
+/* 
+---------------------
+Styles
+----------------------
+*/
+h1{
+  text-align: center;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+h2{
+  font-size: 2rem;
+}
+form{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+input{
+  border: 1px solid purple;
+  background-color: #f3f3f3;
+  padding: .5rem .25rem;
+  border-radius: 5px;
+}
+button{
+  border: none;
+  background-color: purple;
+  color: white;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+}
+.recipe-element{
+  --flow-space: .5rem;
+  background-color: #f3f3f3;
+ 
+}
+.recipe-img-container img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: .25rem;
+}
+.recipe-img-link{
+  padding: 1rem;
+}
+.recipe-text{
+  background-color: #f3f3f3;
+  padding:0rem 1rem .5rem;
+  border-radius: 5px;
+}
+ol{
+  list-style: none;
+}
+
+.serving{
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  
+  body{
+    font-size: 1.25rem;
+  }
+
+}
